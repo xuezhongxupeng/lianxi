@@ -1,0 +1,300 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+/*各浏览器显示不同，去掉蓝色边框*/
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/*统一组合框的默认样式*/
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input, button {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+/*防止拖动 影响布局*/
+textarea {
+    resize: none;
+}
+
+/*去掉行内替换元素空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53"; /*宋体 unicode */
+    color: #666;
+    background: #fff;
+}
+
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*京东色*/
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+.short {
+    height: 30px;
+    background-color: #f1f1f1;
+    line-height: 30px;
+
+}
+
+.short .dropdown {
+    position: relative;
+    padding-right: 29px;
+}
+
+.dropdown i {
+    width: 15px;
+    height: 9px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    overflow: hidden;
+
+}
+
+.dropdown i s {
+    position: absolute;
+    top: -7px;
+    left: 0;
+    font: 400 15px/15px consola
+}
+
+.short li {
+    float: left;
+    padding: 0px 10px;
+}
+
+.short .spaer {
+    width: 1px;
+    height: 12px;
+    background-color: #DFDFDF;
+    padding: 0;
+    margin-top: 9px;
+}
+
+.short li span {
+    color: #C81623;
+}
+
+.short .phone {
+    padding-left: 27px;
+    position: relative;
+
+}
+
+.short .phone em {
+    width: 15px;
+    height: 20px;
+    background: url("../images/jd2015img.png");
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.topbanner{
+    background-color: #33BE2F;
+}
+
+.topbanner .w{
+    position: relative;
+}
+
+.closebanner{
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background: url("../images/close-banner.png");
+    top: 5px;
+    right:5px;
+}
+
+#banner{
+    opacity:1;
+}
+.closebanner:hover{
+    background: url("../images/close-banner.png") 0 -19px;
+}
+
+.toplogo{
+    height: 100px;
+}
+.logo{
+    width: 360px;
+    height: 75px;
+    float: left;
+    padding-top: 25px;
+}
+
+.search{
+    height: 32px;
+    width: 495px;
+    border: 2px solid #B61D1D;
+    margin-top: 25px;
+}
+
+.search input[type="text"]{
+    width: 410px;
+    height: 32px;
+    vertical-align: top;
+}
+
+.search input[type="button"]{
+    width: 82px;
+    height: 32px;
+    vertical-align: top;
+    background-color: #B61D1D;
+    color: #D6CCFF;
+}
+
+.car{
+    width: 117px;
+    height: 25px;
+    border: 1px solid #DFDFDF;
+    padding: 10px 0 0 23px;
+    margin-top: 25px;
+}
+
+.car i{
+    background: url("../images/jd2015img.png") 0 -57px no-repeat;
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.gjz{
+    width: 470px;
+    height: 30px;
+    background-color: red;
+}
+
+.dav-l{
+    height: 44px;
+    width: 200px;
+    background-color: #B1191A;
+    line-height: 44px;
+    padding-left: 10px;
+}
+
+.dav-l a{
+    font-size: 16px;
+}
+.dav-c ul{
+    height: 44px;
+
+}
+.dav-c ul li{
+    float: left;
+    height: 44px;
+    line-height: 44px;
+    padding-left: 40px;
+}
+
+.dav-c ul li a{
+    font-size: 16px;
+}
+
+.dav-r{
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.center{
+    border-top: 1px solid red;
+
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .center{
+            width: 740px;
+            height: 410px;
+            background-color: #ccc;
+            position: relative;
+        }
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: red;;
+        }
+        #box-big{
+            width: 300px;
+            height: 200px;
+            background-color: #fff;
+            position: absolute;
+            right: 10px;
+            top: 100px;
+
+        }
+        .show {
+            display: block;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="center">
+    请为下面盒子添加样式：<input type="button" value="设置" id="btn"/>
+    <div id="box"></div>
+    <div id="box-big">
+        <div class="box1">请选择背景色： <input type="button" value="红"/><input type="button" value="黄"/><input type="button" value="蓝"/></div>
+        <div class="box2">宽：<input type="button" value="200"/><input type="button" value="300"/><input type="button" value="400"/></div>
+        <div class="box3">高：<input type="button" value="200"/><input type="button" value="300"/><input type="button" value="400"/></div>
+        <div class="box4"><input type="button" value="恢复"/><input type="button" value="确定"/></div>
+    </div>
+</div>
+<script>
+
+</script>
+</body>
+</html>

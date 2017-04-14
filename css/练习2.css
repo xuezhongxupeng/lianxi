@@ -1,0 +1,437 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+/*各浏览器显示不同，去掉蓝色边框*/
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/*统一组合框的默认样式*/
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input, button {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+/*防止拖动 影响布局*/
+textarea {
+    resize: none;
+}
+
+/*去掉行内替换元素空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53"; /*宋体 unicode */
+    color: #666;
+    background: #fff;
+}
+
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*京东色*/
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+.shortcut{
+    background-color: #F1F1F1;
+    line-height: 30px;
+}
+
+.shortcut .short-l{
+    position: relative;
+    padding-right: 29px;
+}
+.short-l i{
+    height: 9px;
+    width: 15px;
+    position: absolute;
+    top: 10px;
+    right:10px;
+    overflow: hidden;
+}
+
+.short-l i em{
+    font: 400 15px/15px consolas;
+    position: absolute;
+    top: -7px;
+    left: 0;
+}
+
+.short-r ul li{
+    float: left;
+    padding:0 10px;
+}
+
+.short-r ul li span{
+    color: #C81623;
+}
+
+.short-r .spacer{
+    height: 12px;
+    width: 1px;
+    background-color: #DFDFDF;
+    padding: 0;
+    margin-top: 9px;
+}
+
+.short-r .phone{
+    padding-left: 27px;
+}
+
+.short-r .phone s{
+    background: url("../images/jd2015img.png") 0 0 no-repeat;
+    width: 15px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.banner{
+    background-color: #34BF32;
+
+}
+
+.banner .w{
+    position: relative;
+}
+
+.close-banner{
+    background:url("../images/close-banner.png");
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.close-banner:hover{
+    background: url(../images/close-banner.png) 0 -19px no-repeat;
+}
+
+.top{
+    /*margin-top: 10px;*/
+}
+
+.logo{
+    width: 362px;
+    height: 100px;
+}
+
+.logo a{
+    width: 270px;
+    height: 60px;
+    display: block;
+    text-indent:-4444px;
+    margin-top: 20px;
+    background:url("../images/logo.png");
+    
+}
+
+.search{
+    width: 538px;
+    height: 36px;
+    margin-top: 20px;
+}
+
+.search input[type="text"]{
+    width: 450px;
+    height: 32px;
+    /*vertical-align: top;*/
+    border: 2px solid #C81623;
+    float: left;
+    padding-left: 4px;
+    font: 400 12px/32px microsoft yahei;
+    color:#666;
+}
+
+.search input[type="button"]{
+    width: 80px;
+    height: 36px;
+    /*vertical-align: top;*/
+    background-color: #C81623;
+    float: left;
+    cursor:pointer;
+    color: #FFFFCC;
+
+}
+.car{
+     width: 96px;
+     height: 34px;
+     border: 1px solid #ccc;
+    position: relative;
+     padding-left: 43px;
+    line-height: 34px;
+    margin-top: 20px;
+ }
+
+.car .icon-1{
+    background: url("../images/jd2015img.png") -1px -57px no-repeat;
+    top: 8px;
+    left: 20px;
+    position: absolute;
+    width: 19px;
+    height: 16px;
+
+}
+
+.car .icon-2{
+    position: absolute;
+    width: 16px;
+    height: 13px;
+    font: 400 13px/13px simsun;
+    top: 10px;
+    right: 11px;
+
+}
+
+.car .icon-3{
+    /*width: 16px;*/
+    height: 14px;
+    position: absolute;
+    top: -4px;
+    left: 104px;
+    line-height: 14px;
+    background-color: #C81623;
+    text-align: center;
+    color: #FFF;
+    border-radius: 7px 7px 7px 0;
+    padding:0 4px;
+}
+
+ .text{
+     width: 470px;
+     height: 30px;
+     /*background-color: blue;*/
+     line-height: 30px;
+     overflow: hidden;
+ }
+
+.text a{
+    margin-right: 10px;
+    float: left;
+}
+
+.text .first{
+    color: #C81623;
+}
+
+
+
+
+/*底部部分start*/
+.footer{
+    /*height: 500px;*/
+    /*background-color: red;*/
+}
+
+.service{
+    /*height: 296px;*/
+    /*background-color: blue;*/
+}
+
+.slogan{
+    height: 94px;
+    background-color: #F5F5F5;
+    position: relative;
+}
+
+.slogan .item{
+    width: 220px;
+    height: 54px;
+    background-color: red;
+    position: absolute;
+    left:50%;
+    top: 20px;
+}
+
+.slogan .item1{
+    margin-left: -604px;
+}
+
+.slogan .item2{
+    margin-left: -304px;
+}
+
+.slogan .item4{
+    margin-left: 305px;
+}
+
+.slogan .item b {
+    padding: 0 10px;
+    font: 700 24px/54px "microsoft yahei";
+    color: #C81623;
+}
+
+.slogan i{
+    width: 220px;
+    height: 54px;
+    position: absolute;
+    /*background:url("../images/slogen1.png");*/
+}
+
+.slogan .item1 i{
+    background:url("../images/slogen1.png");
+}
+
+.slogan .item2 i{
+    background:url("../images/slogen2.png");
+}
+
+.slogan .item3 i{
+    background:url("../images/slogen3.png");
+}
+
+.slogan .item4 i{
+    background:url("../images/slogen4.png");
+}
+
+.info{
+    height: 202px;
+    /*background-color: pink;*/
+    margin-top: 16px;
+}
+
+.info dl{
+    width: 199px;
+    float: left;
+
+}
+
+.info dt,.coverage-dt{
+    font: 400 16px/35px "microsoft yahei";
+}
+
+.info dd,.coverage-dd{
+    line-height: 20px;
+}
+
+.info .last{
+    width: 100px;
+}
+
+.coverage{
+    width: 185px;
+    height: 169px;
+    float: right;
+    background: url("../images/china.png") 0 -129px;
+    margin-right: 47px;
+    padding-left: 18px;
+}
+
+.bottom{
+    height: 196px;
+    /*background-color: green;*/
+    border-top: 1px solid #E5E5E5;
+}
+
+.link{
+    margin-top: 20px;
+    margin-bottom: 14px;
+}
+
+.link a{
+    margin:0 10px;
+}
+
+.authentication img{
+    margin-right:10px;
+
+}
+
+.authentication{
+    margin-top: 10px;
+
+}

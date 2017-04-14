@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--<div id="box">-->
+    <!--<input type="text"/>-->
+    <!--<input type="text"/>-->
+    <!--<input type="text"/>-->
+<!--</div>-->
+<!--<input type="button" value="获取" id="btn"/>-->
+<input type="text" value="玩具" id="tex"/>
+<button>aa</button>
+<script>
+    var tex=document.getElementById("tex");
+    tex.onfocus=function(){
+        if(this.value==="玩具"){
+//            如果是默认文本 就清空。
+            this.value="";
+        }
+
+    };
+    tex.onblur=function(){
+        if(this.value===""){
+//            如果没有输入文字  变成默认文字
+            this.value="玩具";
+        }
+
+    };
+//    var box = document.getElementById("box");
+//   var btn= document.getElementById("btn");
+//    var inputs = box.getElementsByTagName("input");
+//    for (i = 0; i < inputs.length; i++) {
+//        inputs[i].value = i;
+//    }
+//    btn.onclick = function () {//    点击按钮  控制台输出input 里value值。
+////        var str = 0;
+//        var arr=[];
+//        for (i = 0; i < inputs.length; i++) {
+////            str = str + inputs[i].value;
+////            console.log(inputs[i].value);
+//            arr.push(inputs[i].value);
+//        }
+////        console.log(str);
+//        var str=arr.join("");
+//        console.log(str);
+//    }
+
+</script>
+</body>
+</html>

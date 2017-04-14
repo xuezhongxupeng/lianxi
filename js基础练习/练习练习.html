@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .current{
+            background-color: blue;;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="按钮"/>
+<input type="button" value="按钮"/>
+<input type="button" value="按钮"/>
+<input type="button" value="按钮"/>
+<!--<select name="" id="">-->
+    <!--<option value="">嘻嘻</option>-->
+    <!--<option value="" id="haha">哈哈</option>-->
+    <!--<option value="">呵呵</option>-->
+    <!--<option value="">嘿嘿</option>-->
+<!--</select>-->
+<!--<input type="button" value="谁来啊" id="btn"/>-->
+<script>
+    var inputs=document.getElementsByTagName("input");
+    for(i=0;i<inputs.length;i++){
+        inputs[i].onclick=function(){
+            for(i=0;i<inputs.length;i++){
+                inputs[i].className="";
+            }
+            this.className="current";
+        }
+    }
+//    var btn=document.getElementById("btn");
+//    var op=document.getElementById("haha");
+//    btn.onclick=function(){
+//        op.selected=true;
+//    };
+</script>
+</body>
+</html>

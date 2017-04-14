@@ -1,0 +1,310 @@
+/*µ¼º½start*/
+.dav {
+    height: 44px;
+    border-bottom: 2px solid #B1191A;
+}
+
+.dav-l {
+    z-index: 1;
+    position: relative;
+    width: 210px;
+    height: 44px;
+}
+
+.dav .cate-dd {
+    width: 200px;
+    height: 44px;
+    background-color: #B1191A;
+    line-height: 44px;
+    padding-left: 10px;
+    color: #fff;
+}
+
+.dav .cate-dd a {
+    color: #fff;
+}
+
+.cate-dt {
+    height: 466px;
+    width: 209px;
+    background-color: #C81623;
+    boder-left: 1px solid #C81623;
+    margin-top: 2px;
+}
+
+.cate-item {
+    height: 31px;
+    position: relative;
+}
+
+.cate-item a {
+    font: 400 14px/31px "microsoft yahei";
+    color: #fff;
+    margin-left: 10px;
+
+}
+
+.cate-item:hover {
+    background-color: #fff;
+}
+
+.cate-item i {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font: 400 9px/14px consolas;
+    color: #fff;
+}
+
+.cate-item:hover a {
+    color: #C81623;
+}
+
+.dav .dav-c {
+    height: 44px;
+    width: 750px;
+    /*line-height: 44px;*/
+
+}
+
+.dav-c ul li {
+    float: left;
+    /*overflow: hidden;*/
+}
+
+.dav .dav-c a {
+    padding: 0 20px;
+    font: 15px/44px microsoft yahei;
+    color: #333;
+}
+
+.dav .dav-c a:hover {
+    color: #C81623;
+}
+
+.dav-r {
+    width: 140px;
+    height: 44px;
+    /*background-color: red;*/
+}
+
+.dav-r a {
+    background: url("../images/treasure2.jpg") no-repeat;
+    width: 296px;
+    height: 107px;
+    display: block;
+    left: -110px;
+    top: -10px;
+    position: relative;
+}
+
+.bg-pic {
+    position: relative;
+}
+
+.bg-pic a {
+    width: 100%;
+    height: 644px;
+    background: url(../images/bg-banner.jpg) top no-repeat;
+    position: absolute;
+
+}
+
+.main {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.slider {
+    width: 730px;
+    height: 454px;
+    /*background-color: yellowgreen;*/
+    margin-left: 220px;
+    margin-top: 12px;
+    float: left;
+    /*background:url("../images/slider.jpg");*/
+    position: relative;
+    overflow: hidden;
+}
+
+#box{
+    width: 730px;
+    height: 454px;
+}
+
+#box ul{
+    width: 5110px;
+    position: absolute;
+}
+
+#box  ul li{
+    float: left;
+    overflow: hidden;
+}
+/*.slider a {*/
+    /*background-image:url(../images/1.jpg);*/
+    /*display: block;*/
+    /*width: 730px;*/
+    /*height: 454px;*/
+/*}*/
+
+.circle {
+    height: 18px;
+    width: 132px;
+    /*background-color: #fff;*/
+    /*left: 50%;*/
+    bottom: 10px;
+    position: absolute;
+    /*margin-left: 64px;*/
+}
+
+.circle li {
+    float: left;
+    width: 18px;
+    height: 18px;
+    background-color: #3E3E3E;
+    margin: 0 2px;
+    border-radius: 9px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.circle  li.current {
+    background-color: #B61B1F;
+}
+.current{
+    background-color: #B61B1F;
+}
+
+.prom .arrow a, .slider .arrow span {
+    height: 62px;
+    width: 28px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    margin-top: -31px;
+    font: 400 22px/62px microsoft yahei;
+    cursor: pointer;
+}
+
+/*#arr {*/
+    /*display: none;*/
+/*}*/
+
+.arrow .arrow-l {
+    left: 0;
+}
+
+.arrow .arrow-r{
+    right: 0;
+}
+
+.main-extra {
+    width: 250px;
+    height: 454px;
+    /*background-color: greenyellow;*/
+    float: right;
+    margin-top: 12px;
+}
+
+.news {
+    width: 248px;
+    height: 163px;
+    /*background-color: green;*/
+    border: 1px solid #e4e4e4;
+}
+
+.right-pic {
+    margin-top: 5px;
+}
+
+.news .mt {
+    height: 32px;
+    boder-bottom: 1px dotted #E8E8E7;
+    padding: 0 15px;
+}
+
+.news .mt h2 {
+    float: left;
+    font: 400 16px/32px "Î¢ÈíÑÅºÚ";
+}
+
+.news .mt a {
+    float: right;
+    line-height: 32px;
+    font-family: console;
+}
+
+.news .mc ul li {
+    line-height: 24px;
+}
+
+.news .mc {
+    padding: 6px 0 0 15px;
+}
+
+.news .mc span {
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.life {
+    width: 248px;
+    height: 208px;
+    /*background-color: yellowgreen;*/
+    border: 1px solid #e4e4e4;
+    border-top: none;
+    overflow: hidden;
+}
+
+.life li {
+    border-right: 1px solid #e8e8e7;
+    border-bottom: 1px solid #e7e7e8;
+    float: left;
+}
+
+.life ul {
+    width: 252px;
+}
+
+.life li a {
+    width: 62px;
+    height: 28px;
+    display: block;
+    padding-top: 42px;
+    text-align: center;
+    line-height: 28px;
+    position: relative;
+}
+
+.life li i {
+    width: 25px;
+    height: 25px;
+    background: url("../images/lifserv.png");
+    top: 10px;
+    left: 18px;
+    position: absolute;
+}
+
+.prom .fr {
+    width: 1000px;
+    height: 164px;
+    overflow: hidden;
+    position: relative;
+}
+
+.prom .fr ul li {
+    float: left;
+    margin-right: 1px;
+}
+
+.prom ul {
+    width: 10000px;
+}
+
+.prom {
+    position: relative;
+}
